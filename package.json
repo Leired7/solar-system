@@ -27,6 +27,9 @@
     "styled-components": "5.3.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "5.15.1",
+    "@testing-library/react": "12.1.2",
+    "@testing-library/user-event": "github:testing-library/user-event",
     "@types/node": "16.11.10",
     "@types/react": "17.0.37",
     "@types/react-dom": "17.0.11"
