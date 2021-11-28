@@ -1,5 +1,6 @@
 name: PR Linters and Test
 on: push
+branches: master
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -12,8 +13,6 @@ jobs:
         with:
           node-version: '12.x'
       - name: Instalar dependencias
-        working-directory: public
         run: npm ci
       - name: Pasar prettier
-        working-directory: public
         run: npm run prettier
