@@ -1,12 +1,12 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 
-// You have to write data-testid
-const Title = () => <h1 data-testid="hero-title">Gatsby is awesome!</h1>
+import IndexPage from './index'
 
-test('Displays the correct title', () => {
-    const { getByTestId } = render(<Title />)
-    // Assertion
-    expect(getByTestId('hero-title')).toHaveTextContent('Gatsby is awesome!')
-    // --> Test will pass
+describe('Al acceder a Sistema Solar se ve', () => {
+    it('una foto del planeta Tierra', () => {
+        render(<IndexPage />)
+
+        screen.getByRole('img', { name: 'Planeta Tierra' })
+    })
 })
