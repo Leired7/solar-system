@@ -12,8 +12,8 @@ jobs:
         with:
           node-version: '12.x'
       - name: Instalar dependencias
-        working-directory: front
+        working-directory: public
         run: npm ci
       - name: Pasar prettier
-        working-directory: front
+        working-directory: public
         run: npm run prettier
