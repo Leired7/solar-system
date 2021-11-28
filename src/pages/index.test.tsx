@@ -18,7 +18,16 @@ describe('Al acceder a Sistema Solar se ve', () => {
         screen.getByRole('heading', { name: nameOfPlanet });
     });
 
-    it('los suguientes datos de la Tierra: gravedad', () => {
+    it('los siguientes datos de la Tierra: densidad', () => {
+        const density = 'Densidad';
+        const densityValue = 5.5136;
+        render(<IndexPage />);
+
+        screen.getByRole('heading', { name: density });
+        screen.getByText(densityValue);
+    });
+
+    it('los siguientes datos de la Tierra: gravedad', () => {
         const gravity = 'Gravedad';
         const gravityValue = 9.8;
         render(<IndexPage />);

@@ -9,6 +9,8 @@ const IndexPage = () => {
             <h2>Tierra</h2>
             <h3>Gravedad</h3>
             <p>9.8</p>
+            <h3>Densidad</h3>
+            <p>5.5136</p>
             <img src={planetEarth} alt="Planeta Tierra" />
         </>
     );
