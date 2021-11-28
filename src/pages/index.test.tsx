@@ -35,4 +35,21 @@ describe('Al acceder a Sistema Solar se ve', () => {
     screen.getByRole('heading', { name: gravity });
     screen.getByText(gravityValue);
   });
+
+  it('Muestra los nombres de todos los planetas', () => {
+    const planetNames = [
+      'Mercurio',
+      'Venus',
+      'Tierra',
+      'Marte',
+      'Jupiter',
+      'Saturno',
+      'Urano',
+    ];
+    render(<IndexPage />);
+
+    planetNames.map((planetName) =>
+      screen.getByRole('link', { name: planetName })
+    );
+  });
 });
