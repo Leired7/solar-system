@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
         siteUrl: 'https://www.yourdomain.tld',
-        title: 'solar-system',
+        title: 'Sistema Solar',
     },
     plugins: [
         'gatsby-plugin-styled-components',
@@ -23,6 +23,16 @@ module.exports = {
                 isTSX: true, // defaults to false
                 jsxPragma: `jsx`, // defaults to "React"
                 allExtensions: true, // defaults to false
+            },
+        },
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [
+                    `Outfit`,
+                    `source sans pro\:400,500,700`, // you can also specify font weights and styles
+                ],
+                display: 'swap',
             },
         },
     ],
