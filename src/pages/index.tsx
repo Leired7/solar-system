@@ -6,6 +6,7 @@ const IndexPage = () => {
     return (
         <>
             <h1>Sistema Solar</h1>
+            <h2>Tierra</h2>
             <img src={planetEarth} alt="Planeta Tierra" />
         </>
     );

@@ -10,4 +10,11 @@ describe('Al acceder a Sistema Solar se ve', () => {
 
         screen.getByRole('img', { name: nameOfPlanet });
     });
+
+    it('un texto con el nombre del planeta', () => {
+        const nameOfPlanet = 'Tierra';
+
+        render(<IndexPage />);
+        screen.getByRole('heading', { name: nameOfPlanet });
+    });
 });
