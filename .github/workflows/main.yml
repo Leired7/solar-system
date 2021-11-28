@@ -1,6 +1,5 @@
 name: PR Linters and Test
-on:
-    push
+on: push
 jobs:
     build:
         runs-on: ubuntu-latest
