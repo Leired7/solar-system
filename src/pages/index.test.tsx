@@ -17,4 +17,13 @@ describe('Al acceder a Sistema Solar se ve', () => {
         render(<IndexPage />);
         screen.getByRole('heading', { name: nameOfPlanet });
     });
+
+    it('los suguientes datos de la Tierra: gravedad', () => {
+        const gravity = 'Gravedad';
+        const gravityValue = 9.8;
+        render(<IndexPage />);
+
+        screen.getByRole('heading', { name: gravity });
+        screen.getByText(gravityValue);
+    });
 });
