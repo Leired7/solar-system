@@ -2,9 +2,13 @@ import * as React from 'react';
 
 import '../styles/reset.css';
 import '../styles/index.css';
-
+import mocks from '../mocks';
 import planetEarth from '../images/earth_dscovr_apr19_transparent.png';
 
+if (process.env.NODE_ENV === 'development') {
+  const { worker } = require('../mocks/browser');
+  worker.start();
+}
 // markup
 const IndexPage = () => {
   return (
